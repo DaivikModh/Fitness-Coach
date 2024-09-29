@@ -1,0 +1,71 @@
+{% extends 'navbar.html' %} {%block linkcss%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/homepage.css') }}"
+/>
+{%endblock%} {% block content%}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>SOLUTIONS FOR PERSONALIZED FITNESS GROWTH</h1>
+    <p>
+      "GUIDING YOU TO A STRONGER, HEALTHIER YOU WITH PERSONALIZED PLANS, EXPERT
+      ADVICE, AND THE DEDICATION TO ACHIEVE YOUR GOALS."
+    </p>
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Learn More</a>
+      <a href="services.html" class="btn-secondary">Our Services</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img
+      src="{{ url_for('static', filename='images/Logo.png') }}"
+      alt="Hero Image"
+    />
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <img
+    src="{{ url_for('static', filename='images/Logo.png') }}"
+    class="left-image"
+    alt="New Illustration"
+  />
+  <h2>CONVERT YOUR DREAMS INTO ACTIONS</h2>
+  <a href="/register" class="cta-button">
+    <img src="https://i.ibb.co/6nXwfVp/rocket-icon.png" alt="Icon" />
+    Get started
+  </a>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+  <div class="service-item">
+    <a href="/fitnessplan" class="extra_links">FITNESS PLANNING</a>
+    <p>
+      Utilize the power of "FITNESS COACH" to create a your own fitness plans
+      that meets your "LIFE GOALS".
+    </p>
+  </div>
+  <div class="service-item">
+    <a href="/dietPlan" class="extra_links">NUTRITION PLANS</a>
+    <p>
+      Customized diet plans: Vegan, Vegetarian, Non-Vegetarian. Balanced meals
+      with all essential nutrients for optimal health.
+    </p>
+  </div>
+  <div class="service-item">
+    <a href="/" class="extra_links">MIND AND BODY WELLNESS</a>
+    <p>
+      Holistic approach integrating both mental and physical wellness, including
+      meditation and recovery plans.
+    </p>
+  </div>
+  <div class="service-item">
+    <a href="/" class="extra_links">FITNESS RESOURCE</a>
+    <p>Blog posts with expert tips and advice.</p>
+  </div>
+</section>
+
+{%endblock%}

@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7fa; /* Light blue background color */
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.navbar h1 {
+  color: #333;
+  margin: 0;
+  font-size: 24px;
+}
+.navbar h2 {
+  color: #555;
+  margin: 0;
+  font-size: 18px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* Adjusted height for the navbar */
+  padding: 20px;
+}
+.content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}

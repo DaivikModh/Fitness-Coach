@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  /* padding: 20px; */
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.workout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.workout-item:last-child {
+  border-bottom: none;
+}
+
+.workout-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.workout-item span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 20px;
+  color: #aaa;
+}

@@ -1,0 +1,26 @@
+{% extends 'navbar.html' %} {%block linkcss%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/excercise.css') }}"
+/>
+{%endblock%} {% block content%}
+<h1>{{ day_name }}</h1>
+<h2>{{ today }}</h2>
+<h2>{{ selected_area }}</h2>
+<div class="container">
+  <div class="content">
+    <h3>Welcome, {{ username }}!</h3>
+    <div class="exercise-list">
+      <h4>Today's Exercises:</h4>
+      <ul>
+        {% for exercise in exercises_today %}
+        <li>
+          {{ exercise.exercise_name }} - {{ exercise.sets }} sets, {{
+          exercise.reps }} - {{ exercise.category }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{%endblock%}

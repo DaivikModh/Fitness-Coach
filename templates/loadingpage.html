@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FITNESS COACH - Loading</title>
+    <style>
+      /* Global reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body styling */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0; /* Light grey background */
+        font-family: Arial, sans-serif;
+      }
+
+      /* Loader container */
+      .loader-container {
+        text-align: center;
+      }
+
+      /* Logo styling */
+      .logo {
+        width: 200px;
+        max-width: 100%;
+        animation: pulse 2.8s infinite ease-in-out;
+      }
+
+      /* Loading text styling with typing effect */
+      .loading-text {
+        margin-top: 20px;
+        font-size: 2em;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden; /* Ensures the text appears to be typed */
+        border-right: 4px solid black; /* Cursor effect */
+        width: 38ch; /* Limits the visible width for the typing effect */
+        animation: typing 6s steps(42), blink-cursor 6s infinite step-end;
+      }
+
+      /* Keyframes for pulsing logo animation */
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.4);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Keyframes for typing text animation */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 38ch; /* 'Loading...' has 10 characters */
+        }
+      }
+
+      /* Keyframes for blinking cursor effect */
+      @keyframes blink-cursor {
+        10% {
+          border-color: transparent;
+        }
+      }
+
+      /* Mobile responsiveness */
+      @media only screen and (max-width: 600px) {
+        .loading-text {
+          font-size: 1.2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader-container">
+      <img src="static/images/Logo.png" alt="FITNESS COACH Logo" class="logo" />
+      <div class="loading-text">Begin Your Journey With "FITNESS COACH"...</div>
+    </div>
+  </body>
+</html>

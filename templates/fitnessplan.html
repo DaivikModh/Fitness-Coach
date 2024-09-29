@@ -1,0 +1,54 @@
+{% extends 'navbar.html' %} {%block linkcss%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/fitnessplan.css') }}"
+/>
+{%endblock%} {% block content%}
+<div class="container">
+  <!-- Workout Category: Abs & Core -->
+  <div class="workout-item">
+    <span>
+      <img src="static/images/abs&core.png" alt="Abs & Core" />
+      Abs & Core
+    </span>
+    <span class="arrow">&rsaquo;</span>
+  </div>
+
+  <!-- Workout Category: Upper Body -->
+  <div class="workout-item">
+    <span>
+      <img src="static/images/upper_body.jpg" alt="Upper Body" />
+      Upper Body
+    </span>
+    <span class="arrow">&rsaquo;</span>
+  </div>
+
+  <!-- Workout Category: Lower Body -->
+  <div class="workout-item">
+    <span>
+      <img src="static/images/lower_body.jpg" alt="Lower Body" />
+      Lower Body
+    </span>
+    <span class="arrow">&rsaquo;</span>
+  </div>
+
+  <!-- Workout Category: Cardio -->
+  <div class="workout-item">
+    <span>
+      <img src="static/images/cardio.jpg" alt="Cardio" />
+      Cardio
+    </span>
+    <span class="arrow">&rsaquo;</span>
+  </div>
+
+  <!-- Workout Category: Stretching -->
+  <div class="workout-item">
+    <span>
+      <img src="static/images/stretching.png" alt="Stretching" />
+      Stretching
+    </span>
+    <span class="arrow">&rsaquo;</span>
+  </div>
+</div>
+
+{%endblock%}

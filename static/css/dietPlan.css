@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.option-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-group button,
+.option-group input[type="button"] {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f4f4f4;
+  color: #333;
+  cursor: pointer;
+}
+
+.option-group button.active,
+.option-group input[type="button"]:checked {
+  background-color: #333;
+  color: white;
+}
+
+.calories-slider {
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.calories-slider input {
+  width: 100%;
+}
+
+.calories-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calories-labels span {
+  font-size: 12px;
+  color: #333;
+}

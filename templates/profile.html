@@ -1,0 +1,21 @@
+{% extends 'navbar.html' %} {%block linkcss%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/profile.css') }}"
+/>
+{%endblock%} {% block content%}
+<section>
+  <div class="container">
+    <h2>Successfully logged in using:</h2>
+    <p><strong>Username:</strong> {{ username }}</p>
+    <p><strong>Age:</strong> {{ age }}</p>
+    <p><strong>Gender:</strong> {{ gender }}</p>
+    <p><strong>Height:</strong> {{ height }} cm</p>
+    <p><strong>Weight:</strong> {{ weight }} kg</p>
+    <p><strong>Fitness Level:</strong> {{ fitness_level }}</p>
+    <div class="button-container">
+      <button onclick="window.location.href='/logout';">Logout</button>
+    </div>
+  </div>
+</section>
+{%endblock%}

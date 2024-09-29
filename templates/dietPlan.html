@@ -1,0 +1,39 @@
+{% extends 'navbar.html' %} {%block linkcss%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/dietPlan.css') }}"
+/>
+{%endblock%} {%block content%}
+
+<div class="container">
+  <!-- Meals Section -->
+  <h2>Meals</h2>
+  <div class="option-group">
+    <button>Breakfast</button>
+    <button>Lunch</button>
+    <button>Dinner</button>
+  </div>
+
+  <!-- Calories Section -->
+  <h2>Calories</h2>
+  <div class="calories-slider">
+    <input type="range" min="0" max="1200" step="50" value="0" />
+  </div>
+  <div class="calories-labels">
+    <span>0</span>
+    <span>400</span>
+    <span>600</span>
+    <span>800</span>
+    <span>1000</span>
+    <span>1200+</span>
+  </div>
+
+  <!-- Diet Section -->
+  <h2>Diet</h2>
+  <div class="option-group">
+    <button>Vegan</button>
+    <button>Vegetarian</button>
+    <button>Non-Vegetarian</button>
+  </div>
+</div>
+{%endblock%}

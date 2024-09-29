@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* White background with slight transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 300px; /* Set a width for the form */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #007bff; /* Blue title */
+  text-align: center;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+
+/* Style the label to look like a button */
+label {
+  display: block; /* Make each label a block for full-width */
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #b0b0b0; /* Light grey */
+  color: white;
+  border-radius: 5px;
+  text-align: center; /* Center text */
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 0 #7d7d7d; /* Darker grey for shadow */
+}
+
+/* Change background color and apply pressed effect when checkbox is checked */
+input[type="checkbox"]:checked + label {
+  background-color: #007bff; /* Blue when checked */
+  box-shadow: 0 2px 0 #0056b3; /* Darker blue for pressed effect */
+  transform: translateY(3px); /* Pressed down effect */
+}
+
+/* Change background color on hover */
+label:hover {
+  background-color: #a0a0a0; /* Slightly darker grey on hover */
+}
+
+button {
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 0 #0056b3; /* Darker blue for shadow */
+  width: 100%; /* Full width button */
+}
+
+button:hover {
+  background-color: #0069d9; /* Slightly darker blue on hover */
+}
+
+button:active {
+  box-shadow: 0 2px 0 #0056b3;
+  transform: translateY(3px); /* Pressed effect */
+}
